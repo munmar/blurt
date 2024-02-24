@@ -1,0 +1,77 @@
+:root {
+  --main-bg-color: #9dbff1;
+  --main-text-color: #009ABC;
+  --second-text-color: #252525;
+  --second-bg-color: #c1e0ef;
+  --third-text-color: #18b403;
+}
+
+.primary-text {
+  color: var(--main-text-color);
+}
+
+.second-text {
+  color: var(--second-text-color);
+}
+
+.primary-bg {
+  background-color: var(--main-bg-color);
+}
+
+.secondary-bg {
+  background-color: var(--second-bg-color);
+}
+
+.third-text {
+  color: var(--third-text-color);
+}
+
+.rounded-full {
+  border-radius: 100%;
+}
+
+#wrapper {
+  overflow-x: hidden;
+  background-image: linear-gradient(
+    to right,
+    #bad5f3,
+    #bad8f0,
+    #cbe9f7,
+    #d4ebf8,
+    #ddf2fa
+  );
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#main-content {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#card-wrapper {
+  margin: 20px;
+}
+
+#user-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#post-username {
+  padding-left: 10px;
+}
+
+#menu-toggle {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+}
