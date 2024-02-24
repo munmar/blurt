@@ -1,6 +1,12 @@
-from django.http import HttpResponse
+from django.shortcuts import render
+
+from .models import Post
 
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Welcome to Blurts index!")
+    blurt_list = Post.objects.order_by("-pub_date")[:5]
+    context = {
+        "blurt_list": blurt_list,
+    }
+    return render(request, "blurt/index.html", context)
